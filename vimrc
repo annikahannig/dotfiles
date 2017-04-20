@@ -30,7 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
 
 call vundle#end()
 "
@@ -71,7 +71,7 @@ au BufRead,BufNewFile Makefile
 "
 
 " Configure ALE
-let g:ale_python_pylint_options='--disable=E0401'
+" let g:ale_python_pylint_options='--disable=E0401'
 
 " Configure Airline
 let g:airline_theme='jellybeans'
