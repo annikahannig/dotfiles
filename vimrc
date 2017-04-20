@@ -10,6 +10,8 @@ syntax on
 set background=dark
 set encoding=utf-8
 
+colorscheme desert
+
 set ts=4
 set expandtab
 set shiftwidth=4
