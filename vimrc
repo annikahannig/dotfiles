@@ -12,13 +12,17 @@ set encoding=utf-8
 
 colorscheme desert
 
+
+
 set ts=4
 set expandtab
 set shiftwidth=4
 set ai
 
-" Use system clipboard
-set clipboard=unnamed
+" Add additional copy to .vimbuffer (to avoid touching the clipboard)
+vmap <C-c> :w! ~/.vimbuffer<CR>
+nmap <C-c> :.w! ~/.vimbuffer<CR>
+map <C-p> :r ~/.vimbuffer<CR>
 
 
 "
