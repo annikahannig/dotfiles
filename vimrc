@@ -30,13 +30,18 @@ map <C-p> :r ~/.vimbuffer<CR>
 "
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Go
 Plugin 'fatih/vim-go'
+
+" Airline
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'w0rp/ale'
+
+" React / JSX / JS
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 "
@@ -89,3 +94,7 @@ set whichwrap+=<,>,h,l
 
 " Enable 256 colors mode
 set t_Co=256
+
+" Javascript
+autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+
