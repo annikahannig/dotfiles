@@ -98,3 +98,17 @@ set t_Co=256
 " Javascript
 autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
 
+
+" Erlang templates
+function! Ehrl()
+    r~/.vim/erl-tmpl/hrl.erl
+endfunction
+
+function! Ebrl()
+    r~/.vim/erl-tmpl/brl.erl
+endfunction
+
+inoremap <C-h> <ESC>:call Ehrl()<CR>
+inoremap <C-b> <ESC>:call Ebrl()<CR>
+
+
