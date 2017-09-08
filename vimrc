@@ -32,6 +32,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
+" Elm
+Plugin 'ElmCast/elm-vim'
+
 " Go
 Plugin 'fatih/vim-go'
 
@@ -69,10 +72,10 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2 |
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set ts=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2 |
+    \ set shiftwidth=2
 
 
 au BufRead,BufNewFile Makefile
@@ -97,6 +100,10 @@ set t_Co=256
 
 " Javascript
 autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.js,*.jsx set ts=2
+
+" Enable elm syntax hilighting
+autocmd BufNewFile,BufRead *.elm set ft=elm
 
 
 " Erlang templates
